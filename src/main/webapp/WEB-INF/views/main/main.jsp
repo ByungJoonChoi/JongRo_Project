@@ -9,18 +9,30 @@ integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJ
 
 <title>Insert title here</title>
 <style>
+html{ background-color:black; }
+
 #navBarSearch input[type=search]{width:400px !important;}
 #userInfoContainer{flex-direction:row !important;}
 #userInfoContainer #userPhotoWrapper{line-height: 36px;}
-#userInfoContainer #userName{padding:8px !important;}
+#userPhotoWrapper img{cursor: pointer;}
+#userInfoContainer #userName{
+padding:8px !important; 
+pointer-events: none;  
+cursor: default;
+}
 
-#contents{padding:5px; margin-top:56px; background-color:black; display:grid; grid-template-columns: repeat(auto-fit, 20%);}
+#menu{ padding:20px 20px 0 0; margin-top:56px; background-color:black; text-align:right;}
+#menu #selectAll, #uploadSong, #playAll{ width:30px; height:30px; cursor: pointer;}
+
+#contents{padding:5px; background-color:black; display:grid; grid-template-columns: repeat(auto-fit, 20%);}
 
 .card{background-color:#343A40; width:150px; height:230px; justify-self: center; margin:35px 0;}
 .card-body{padding:5px 0 0 5px; !important;}
+.card-img-top{ cursor: pointer;}
 #songName, #artist {color:white; font-weight:lighter; width:140px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
 #songName{font-size:14px;}
 #artist{font-size:12px;}
+#btnPlayItem, #btnDownload{width:18px; height:18px; cursor: pointer;}
 </style>
 </head>
 <body>
@@ -43,89 +55,155 @@ integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJ
   </ul> 
 </nav>
 
+<div id="menu">
+	<img id="selectAll" src="/resources/select_all.png">
+	<img id="uploadSong" src="/resources/upload.png">
+	<img id="playAll" src="/resources/play.png">
+</div>
+
 <div id="contents">
 	<div class="card">
 	    <img class="card-img-top" src="/resources/cat.jpeg">
 	    <div class="card-body">
 		    <div id="songName">우주를 줄게</div>
 		    <div id="artist">볼빨간 사춘기</div>
+			<img id="btnPlayItem" src="/resources/play.png">
+			<img id="btnDownload" src="/resources/download.png">
 	    </div>
   	</div>
-	<div class="card">
+  	<div class="card">
 	    <img class="card-img-top" src="/resources/cat.jpeg">
 	    <div class="card-body">
 		    <div id="songName">우주를 줄게</div>
 		    <div id="artist">볼빨간 사춘기</div>
+			<img id="btnPlayItem" src="/resources/play.png">
+			<img id="btnDownload" src="/resources/download.png">
 	    </div>
   	</div>
-	<div class="card">
+  	<div class="card">
 	    <img class="card-img-top" src="/resources/cat.jpeg">
 	    <div class="card-body">
 		    <div id="songName">우주를 줄게</div>
 		    <div id="artist">볼빨간 사춘기</div>
+			<img id="btnPlayItem" src="/resources/play.png">
+			<img id="btnDownload" src="/resources/download.png">
 	    </div>
   	</div>
-	<div class="card">
+  	<div class="card">
 	    <img class="card-img-top" src="/resources/cat.jpeg">
 	    <div class="card-body">
 		    <div id="songName">우주를 줄게</div>
 		    <div id="artist">볼빨간 사춘기</div>
+			<img id="btnPlayItem" src="/resources/play.png">
+			<img id="btnDownload" src="/resources/download.png">
 	    </div>
   	</div>
-	<div class="card">
+  	<div class="card">
 	    <img class="card-img-top" src="/resources/cat.jpeg">
 	    <div class="card-body">
 		    <div id="songName">우주를 줄게</div>
 		    <div id="artist">볼빨간 사춘기</div>
+			<img id="btnPlayItem" src="/resources/play.png">
+			<img id="btnDownload" src="/resources/download.png">
 	    </div>
   	</div>
-	<div class="card">
+  	<div class="card">
 	    <img class="card-img-top" src="/resources/cat.jpeg">
 	    <div class="card-body">
 		    <div id="songName">우주를 줄게</div>
 		    <div id="artist">볼빨간 사춘기</div>
+			<img id="btnPlayItem" src="/resources/play.png">
+			<img id="btnDownload" src="/resources/download.png">
 	    </div>
   	</div>
-	<div class="card">
+  	<div class="card">
 	    <img class="card-img-top" src="/resources/cat.jpeg">
 	    <div class="card-body">
 		    <div id="songName">우주를 줄게</div>
 		    <div id="artist">볼빨간 사춘기</div>
+			<img id="btnPlayItem" src="/resources/play.png">
+			<img id="btnDownload" src="/resources/download.png">
 	    </div>
   	</div>
-	<div class="card">
+  	<div class="card">
 	    <img class="card-img-top" src="/resources/cat.jpeg">
 	    <div class="card-body">
 		    <div id="songName">우주를 줄게</div>
 		    <div id="artist">볼빨간 사춘기</div>
+			<img id="btnPlayItem" src="/resources/play.png">
+			<img id="btnDownload" src="/resources/download.png">
 	    </div>
   	</div>
-	<div class="card">
+  	<div class="card">
 	    <img class="card-img-top" src="/resources/cat.jpeg">
 	    <div class="card-body">
 		    <div id="songName">우주를 줄게</div>
 		    <div id="artist">볼빨간 사춘기</div>
+			<img id="btnPlayItem" src="/resources/play.png">
+			<img id="btnDownload" src="/resources/download.png">
 	    </div>
   	</div>
-	<div class="card">
+  	<div class="card">
 	    <img class="card-img-top" src="/resources/cat.jpeg">
 	    <div class="card-body">
 		    <div id="songName">우주를 줄게</div>
 		    <div id="artist">볼빨간 사춘기</div>
+			<img id="btnPlayItem" src="/resources/play.png">
+			<img id="btnDownload" src="/resources/download.png">
 	    </div>
   	</div>
-	<div class="card">
+  	<div class="card">
 	    <img class="card-img-top" src="/resources/cat.jpeg">
 	    <div class="card-body">
 		    <div id="songName">우주를 줄게</div>
 		    <div id="artist">볼빨간 사춘기</div>
+			<img id="btnPlayItem" src="/resources/play.png">
+			<img id="btnDownload" src="/resources/download.png">
 	    </div>
   	</div>
-	<div class="card">
+  	<div class="card">
 	    <img class="card-img-top" src="/resources/cat.jpeg">
 	    <div class="card-body">
 		    <div id="songName">우주를 줄게</div>
 		    <div id="artist">볼빨간 사춘기</div>
+			<img id="btnPlayItem" src="/resources/play.png">
+			<img id="btnDownload" src="/resources/download.png">
+	    </div>
+  	</div>
+  	<div class="card">
+	    <img class="card-img-top" src="/resources/cat.jpeg">
+	    <div class="card-body">
+		    <div id="songName">우주를 줄게</div>
+		    <div id="artist">볼빨간 사춘기</div>
+			<img id="btnPlayItem" src="/resources/play.png">
+			<img id="btnDownload" src="/resources/download.png">
+	    </div>
+  	</div>
+  	<div class="card">
+	    <img class="card-img-top" src="/resources/cat.jpeg">
+	    <div class="card-body">
+		    <div id="songName">우주를 줄게</div>
+		    <div id="artist">볼빨간 사춘기</div>
+			<img id="btnPlayItem" src="/resources/play.png">
+			<img id="btnDownload" src="/resources/download.png">
+	    </div>
+  	</div>
+  	<div class="card">
+	    <img class="card-img-top" src="/resources/cat.jpeg">
+	    <div class="card-body">
+		    <div id="songName">우주를 줄게</div>
+		    <div id="artist">볼빨간 사춘기</div>
+			<img id="btnPlayItem" src="/resources/play.png">
+			<img id="btnDownload" src="/resources/download.png">
+	    </div>
+  	</div>
+  	<div class="card">
+	    <img class="card-img-top" src="/resources/cat.jpeg">
+	    <div class="card-body">
+		    <div id="songName">우주를 줄게</div>
+		    <div id="artist">볼빨간 사춘기</div>
+			<img id="btnPlayItem" src="/resources/play.png">
+			<img id="btnDownload" src="/resources/download.png">
 	    </div>
   	</div>
 </div>
