@@ -1,0 +1,99 @@
+html, body{
+	background-color:black;
+	padding:0;
+	margin:0;
+}
+
+#container, body, html {
+	height:100%;
+}
+
+#container{
+	display: grid;
+}  
+
+#contents{
+	justify-self: center;
+	align-self:center;
+}
+
+#addFileZone{
+	width:298px; height:298px;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	color:white;
+	font-size: .800rem;
+}
+
+#artworkZone, #mp3FileZone{
+	width:280px; height:135px;
+	display:grid;
+	justify-self: center;
+	align-self:center;
+	border: 2px dashed white; 
+}
+
+#addFileZone-container{
+	justify-self: center;
+	align-self:center;
+	text-align: center;
+}
+
+#addFileZone img{
+	width:30px; height:30px;
+	margin-bottom:10px;
+}
+
+#buttons{
+	width:300px;
+	text-align:center;
+	margin-top:15px;
+}
+
+#buttons #btnCancel{
+	margin-left:20px;
+}
+
+.card{
+	background-color:#343A40; 
+	width:300px; height:460px; 
+}
+.card-img-top{
+	width:298px; height:298px;
+}
+.card-body{
+	padding:0px; !important;
+}
+.card-img-top{ 
+	cursor: pointer;
+}
+#songName, #artist {
+	color:white; 
+	font-weight:lighter; 
+	width:140px; 
+	white-space: nowrap; 
+	overflow: hidden; 
+	text-overflow: ellipsis 
+}
+#songName{
+	font-size:18px;
+}
+#artist{
+	font-size:16px;
+}
+
+.input-group.input-group-sm{
+	margin:0px;!important;
+	padding:8px 8px 0px 8px;
+}
+
+#weather-checkbox{
+	color:white;	
+	font-size: .875rem;
+	padding-left: 16px;
+	margin-top: 10px;
+}
+#weather-label{
+	display:inline-flex;
+	margin-right:15px;
+}
